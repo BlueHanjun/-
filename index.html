@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>松鼠录屏 · 隐私政策</title>
+  <meta name="description" content="松鼠录屏（Squirrel Rec）Chrome 扩展程序的隐私政策。" />
+  <style>
+    :root {
+      --brand: #C4703A;
+      --brand-dark: #9E5228;
+      --text: #2a1f17;
+      --muted: #6B4A38;
+      --bg: #fdf8f4;
+      --card: #ffffff;
+      --border: rgba(196, 140, 90, 0.22);
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+                   "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 8px;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+      box-shadow: 0 6px 18px rgba(196, 112, 58, 0.28);
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+    .updated {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 6px 0 32px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 8px 28px rgba(196, 112, 58, 0.06);
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 28px 0 10px;
+      color: var(--brand-dark);
+      letter-spacing: -0.01em;
+    }
+    h2:first-child { margin-top: 0; }
+    p { margin: 0 0 12px; font-size: 15px; }
+    ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+    li {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    strong { color: var(--brand-dark); }
+    code {
+      background: #faf0e8;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 13px;
+      font-family: "SF Mono", Menlo, Consolas, monospace;
+      color: var(--brand-dark);
+    }
+    a {
+      color: var(--brand-dark);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    a:hover { color: var(--brand); }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="logo">松</span>
+      <h1>松鼠录屏 · 隐私政策</h1>
+    </header>
+    <p class="updated">最后更新：2026 年 5 月 16 日</p>
+
+    <div class="card">
+      <h2>1. 我们收集的信息</h2>
+      <p>
+        松鼠录屏（Squirrel Rec）是一款 Chrome 扩展程序，所有功能均在用户本地浏览器中运行。我们
+        <strong>不收集、不传输、不存储</strong>任何用户个人信息到远程服务器。
+      </p>
+      <p>具体而言：</p>
+      <ul>
+        <li><strong>录制内容</strong>：用户录制的视频画面仅保存在本地浏览器存储（IndexedDB）中，仅用户本人可访问。</li>
+        <li><strong>点击事件数据</strong>：录制期间采集的鼠标点击坐标和时间戳，仅用于本地生成"放大片段"，不离开用户设备。</li>
+        <li><strong>偏好设置</strong>：用户的导出分辨率、画面比例等设置保存在 <code>chrome.storage</code> 中，仅本地使用。</li>
+      </ul>
+
+      <h2>2. 我们不收集的信息</h2>
+      <ul>
+        <li>不读取或采集网页文本、表单、Cookie 等内容</li>
+        <li>不收集浏览历史、书签、账户信息</li>
+        <li>不进行用户行为追踪或分析</li>
+        <li>不使用任何第三方分析、广告或追踪 SDK</li>
+      </ul>
+
+      <h2>3. 权限说明</h2>
+      <p>
+        本扩展请求的权限（<code>downloads</code>、<code>scripting</code>、<code>storage</code>、<code>tabs</code>、<code>host_permissions</code>）均仅用于实现产品核心功能（屏幕录制与视频编辑导出），详细说明见 Chrome 商店发布页面。
+      </p>
+
+      <h2>4. 数据共享</h2>
+      <p>
+        由于本扩展不收集任何用户数据，因此不存在数据共享行为。导出的视频文件由用户自行决定如何使用和分享。
+      </p>
+
+      <h2>5. 第三方服务</h2>
+      <p>
+        本扩展不集成任何第三方服务、API 或 SDK。
+      </p>
+
+      <h2>6. 联系我们</h2>
+      <p>
+        如对本隐私政策有任何疑问，请通过以下方式联系：
+        <a href="mailto:shenhanjun.andy@gmail.com">shenhanjun.andy@gmail.com</a>
+      </p>
+    </div>
+
+    <footer>© 2026 松鼠录屏 · Squirrel Rec</footer>
+  </main>
+</body>
+</html>
